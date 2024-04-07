@@ -8,66 +8,62 @@ import ContentMedia from '../components/ContentMedia.astro'
 
 <DefaultLayout title="Home">
   <Hero />
-  <section class="my-64">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">Features</h2>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:tailwind" title="Tailwind CSS">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+  <section class="my-40">
+    <div class="pointer-events-none absolute inset-0 -z-[1]" aria-hidden="true">
+      <div class="absolute inset-0"></div>
+    </div><div class="text-default relative mx-auto max-w-6xl px-4 py-2 md:px-6 md:py-16 lg:py-20">
+      <div
+        class="mx-auto max-w-3xl rounded-md p-6 text-center shadow-xl dark:border dark:border-slate-600 dark:shadow-none"
+      >
+        <div class="mb-0 text-center md:mx-auto md:mb-0">
+          <h2
+            class="leading-tighter leading-tighter font-heading text-heading mb-4 text-4xl font-bold tracking-tighter md:text-4xl"
+          >
+            Pronto en Cusco!
+          </h2><p class="text-muted mt-4 text-xl dark:text-slate-400">
+            Estamos emocionados de compartir contigo la próxima inauguración de MindFit. Mantente atento a nuestras actualizaciones para obtener más información sobre la fecha de apertura, las promociones de lanzamiento y cómo puedes ser parte de esta emocionante nueva aventura.
+          </p>
+        </div><div
+          class="m-auto mt-6 flex max-w-xs flex-col flex-nowrap gap-4 sm:max-w-md sm:flex-row sm:justify-center"
+        >
+          <div class="flex w-full sm:w-auto">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-40">
+    <div class="container md:px-6 md:py6">
+      <h2 class="mb-16 text-6xl">¿Por qué MindFit?</h2>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2">
+        <Feature icon="mdi:gymnastics" title="Enfoque Integral">
+          Nos centramos en la salud y el bienestar mental y físico. Ofrecemos programas diseñados para fortalecer tanto
+          la mente como el cuerpo, ayudándote a alcanzar un equilibrio saludable en tu vida diaria.
         </Feature>
-        <Feature icon="mdi:wheelchair-accessibility" title="a11y Components">
-          17 components and counting, all tried and tested for the most optimal accessible experience for your visitors.
+        <Feature icon="mdi:account-heart" title="Entrenamiento Personalizado">
+          Nuestros entrenadores certificados trabajarán contigo para crear un plan de ejercicios personalizado que se
+          adapte a tus necesidades y objetivos específicos.
         </Feature>
-        <Feature icon="mdi:looks" title="Prettier">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="mdi:looks" title="Apoyo Emocional">
+          Reconocemos la importancia del bienestar emocional. Ofrecemos sesiones de asesoramiento individualizado para
+          ayudarte a manejar el estrés, la ansiedad y otros desafíos emocionales que puedas enfrentar.
         </Feature>
-        <Feature icon="mdi:eslint" title="ESLint">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
-        </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="Blog">
-          This theme comes with a fully integrated blog, dynamic pages and SEO optimization.
-        </Feature>
-        <Feature icon="mdi:language-markdown" title="Markdown & MDX">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
-        </Feature>
-        <Feature icon="mdi:theme-light-dark" title="Dark mode">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
-        </Feature>
-        <Feature icon="mdi:cog" title="Design System">
-          The theme offers some very handy utilities to help you build your website faster.
-        </Feature>
-        <Feature icon="mdi:lighthouse" title="Lighthouse Scores">
-          Excellent lighthouse scores means your website will load faster and get better SEO rankings.
+        <Feature icon="mdi:medal-outline" title="Variedad de Clases">
+          Desde yoga y meditación hasta entrenamiento de alta intensidad y clases grupales, tenemos una amplia variedad
+          de clases diseñadas para satisfacer tus intereses y necesidades.
         </Feature>
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
+  <ContentMedia imgSrc="/gabin.jpg">
+    <h2>Únete a la Comunidad MindFit</h2>
     <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
+      En MindFit, no solo te ofrecemos un lugar para hacer ejercicio, sino que te invitamos a formar parte de una
+      comunidad enérgica y solidaria de personas comprometidas con su salud y bienestar. Únete a nosotros y descubre
+      cómo juntos podemos alcanzar nuevos niveles de bienestar.
     </p>
   </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.1 AA Compliant</h2>
-    <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
-    </p>
-  </ContentMedia>
-  <section class="mb-32 mt-64">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">Counters</h2>
-      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="520" title="Stars" sub="On GitHub" />
-        <Counter count="17" title="Accessible" sub="Components" />
-        <Counter count="500" title="Commits" sub="Merged" />
-        <Counter count="18+" title="Months" sub="Since launch" />
-      </div>
-    </div>
-  </section>
+  
+  
 </DefaultLayout>
